@@ -128,13 +128,15 @@
 
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-lg-offet-2 col-md-offset-2">
-                        <textarea name="contact_message" id="contact_message" placeholder="Message"></textarea>
+                        <textarea name="contact_message" method="POST" data-netlify="true" id="contact_message"
+                            placeholder="Message"></textarea>
                     </div>
                 </div> <!-- end Message -->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="text-right">
-                            <button class="btn btn-custom" id="contact_submit_btn" name="contact_submit_btn"><span>Send
+                            <button type="submit" class="btn btn-custom" id="contact_submit_btn"
+                                name="contact_submit_btn"><span>Send
                                     Feedback</span></button>
                         </div>
                     </div>
