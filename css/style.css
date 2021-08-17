@@ -20,6 +20,9 @@ body {
   overflow-y: auto;
   font-family: "Roboto", sans-serif;
 }
+#mytitletop {
+  font-size: 72px;
+}
 .margin-t-50 {
   margin-top: 50px;
 }
@@ -125,6 +128,11 @@ body {
     line-height: 50px;
   }
 }
+@media (max-widgth: 360px) {
+  #mytitletop {
+    font-size: xx-large;
+  }
+}
 @media (max-width: 560px) {
   #countdown_dashboard {
     min-width: 300px;
@@ -133,6 +141,14 @@ body {
     font-size: 30px;
     height: 60px;
     line-height: 60px;
+  }
+}
+@media (max-width: 720px) {
+  #mytitletop {
+    font-size: xx-large;
+  }
+  #mytitlebot {
+    font-size: 12px;
   }
 }
 @media (min-width: 560px) and (max-width: 1024px) {
@@ -161,30 +177,11 @@ body {
   border-right: 0px;
   color: #000;
 }
-.news-input:focus {
-  background: url("../images/pattern.png");
-  border: 3px solid #000;
-  border-right: 0px;
-  outline: none;
-  box-shadow: none;
-  color: #fff;
-}
-.news-btn {
-  height: 45px;
-  border: 3px solid #000;
-  font-weight: 700;
-  border-left: 4px solid #000;
-}
-.news-btn:hover {
-  border-left: 3px solid #000;
-}
+
 .news-text {
   font-size: 16px;
   padding: 20px;
   color: #333;
-}
-.newsletter .validation {
-  border: 3px solid #ff0000;
 }
 /* -----------------------------------------------------------------------
    4. Features styles
@@ -292,9 +289,7 @@ div.open-overlay {
   font-size: 15px;
   color: #000000;
 }
-.contact .validation {
-  border: 1px solid #ff0000;
-}
+
 .contact textarea {
   width: 100%;
   height: 170px;
@@ -303,6 +298,11 @@ div.open-overlay {
   font-size: 15px;
   color: #000000;
   line-height: 28px;
+}
+@media (max-width: 720px) {
+  .contact textarea {
+    width: 90%;
+  }
 }
 textarea {
   resize: none;
