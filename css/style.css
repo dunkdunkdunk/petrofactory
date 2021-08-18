@@ -200,6 +200,9 @@ body {
 .myicon {
   color: #fff;
 }
+#myavatar {
+  width: 10%;
+}
 #features {
   background: url("../images/pattern.png"), url("../images/img-2.jpg");
 }
