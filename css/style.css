@@ -20,6 +20,10 @@ body {
   overflow-y: auto;
   font-family: "Roboto", sans-serif;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 #mytitletop {
   font-size: 72px;
 }
@@ -189,7 +193,11 @@ body {
 .features {
   padding: 120px 0px 100px 0px;
 }
-.features h4 {
+.myicon {
+  font-size: xx-large;
+}
+.features h4,
+.myicon {
   color: #fff;
 }
 #features {
